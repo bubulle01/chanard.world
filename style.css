@@ -41,6 +41,9 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height:11vw;
     text-align: center;
@@ -56,7 +59,7 @@ header {
     & > .iconeD {
         width: 9%;
         float: right;
-        transform: rotate(10deg) translateX(clamp(-3vw, -4vw, -6vw));
+        transform: rotate(10deg) translateX(-1vw);
         align-self: auto;
         margin-top: clamp(0, 6vw, 2%);
     }
@@ -64,7 +67,7 @@ header {
     & > .iconeG {
         width: 9%;
         float: left;
-        transform: rotate(-10deg) translateX(clamp(2vw, 4vw, 5vw));
+        transform: rotate(-10deg) translateX(1vw);
         margin-top: clamp(2%, 1vw, 3%);
         margin-right: clamp(2%, 1vw, 3%);
     }
@@ -96,23 +99,25 @@ footer {
     width: 100%;
     display: inline-flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: var(--spectralon);
     padding: clamp(0px, 1vw, 20px) 0;
 
     & > div {
-        transform: translateY(-40px);
+        transform: translateY(-5px);
         width: 20%;
     }
 
     & > .iconeD {
+        display: block;
         align-self: flex-end;
         width: 10%;
         transform: translateX(-20px);
     }
 
     & > .iconeG {
+        display: block;
         width: 12%;
         float: left;
         transform: rotate(10deg);
@@ -122,11 +127,10 @@ footer {
 }
 
 h1 {
-    font-size: clamp(0px, 6vw, 7em);
+    font-size: clamp(0px, 5vw, 5.5em);
     font-style: italic;
     text-decoration: underline;
     text-align: center;
-    margin-top:clamp(10px, 1vw, 30px);
 }
 
 h2 {
@@ -142,9 +146,8 @@ h2 {
     flex-direction: row;
     color: var(--spectralon);
     font-style: normal;
-    font-size: clamp(45px, 7vw, 5em);
     text-indent: 40px;
-    margin: 30px clamp(5px, 2vw, 15px);
+    margin: 30px clamp(5px, 2vw, 15px) 0 0;
 
     & > img {
         margin-left: 10px;
@@ -185,7 +188,7 @@ button {
     height: clamp(0px, 7vw, 50px);
     width: clamp(0px, 15vw, 150px);
     border-radius: 25px;
-    font-size: clamp(0px, 4vw, 35px);
+    font-size: clamp(0px, 3vw, 30px);
     border: 0;
     transition-duration: 0.2s;
     cursor: pointer;
@@ -249,6 +252,26 @@ body > nav {
     #buttonchange > * {
         height: clamp(0px, 15vw, 45px)!important;
         width: auto!important;
+    }
+
+    .elementButton * {
+        width: auto!important;
+        height: 16vw!important;
+    }
+
+    .sign {
+
+        & > .iconeG {
+            display: none;
+        }
+
+        & > .iconeD {
+            display: none;
+        }
+
+        & > div {
+            width: 30%!important;
+        }
     }
 }
 

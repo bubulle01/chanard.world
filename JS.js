@@ -2009,6 +2009,12 @@ thumbnails.forEach(smallThumb => {
                 smallThumb.classList.remove("favori_image");
             }
             affFav(favMenu.src.endsWith("images/arrangement/etoileMenu_gold.png"));
+            if (favMenu.src.endsWith("images/arrangement/etoileMenu_gold.png")) {
+              window.scrollTo(0, 0);
+            }
+            else {
+              window.scrollTo({top: placementBase});
+            }
         }
 
         /* Système de livret des images zoomés */
@@ -2076,10 +2082,12 @@ document.getElementById("favMenu").onclick = function() {
     if (favMenu.src.endsWith("images/arrangement/etoileMenu.png")) {
         favMenu.src = "images/arrangement/etoileMenu_gold.png"; 
         affFav(true);
+        window.scrollTo(0, 0);
     }
     else {
         favMenu.src = "images/arrangement/etoileMenu.png"; 
         affFav(false);
+        window.scrollTo({top: placementBase});
     }
 }
 
@@ -2098,7 +2106,7 @@ videFav.addEventListener("click", function(event) {
 function affFav(elem) {
     if (elem) {
         placementBase = window.scrollY;
-        window.scrollTo(0, 0);
+        //window.scrollTo(0, 0);
         textFavNone.style.display = "flex"; 
         favNone.forEach(truc => {
             truc.style.display = "none";
@@ -2125,7 +2133,7 @@ function affFav(elem) {
         });
 
         textFavNone.style.display = "none"; 
-        window.scrollTo({top: placementBase});
+        //window.scrollTo({top: placementBase});
     }
 }
 
