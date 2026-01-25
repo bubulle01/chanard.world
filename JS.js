@@ -35,7 +35,7 @@ const data = [
     "image": "images/img_montage/Chinf.png",
     "alt": "alt Finch - Xenoblade Chronicles 2",
     "class": "",
-    "titre": "Chaette",
+    "titre": "Chinf",
     "description": ""
   },
   {
