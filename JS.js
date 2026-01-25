@@ -2201,3 +2201,10 @@ function debloquerScroll() {
     document.body.style.overflowY = "";
     document.documentElement.style.overflowY = "";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("img").forEach(img => {
+    img.setAttribute("loading", "lazy");
+    img.setAttribute("decoding", "async");
+  });
+});
