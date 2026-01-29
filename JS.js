@@ -32,6 +32,13 @@ const amiibo = document.getElementById("amiibo");
 /* Démarre le JSON pour l'application automatisé des images */
 const data = [
   {
+    "image": "images/img_montage/Chunther.png",
+    "alt": "alt Gunther - Adventure Time",
+    "class": "",
+    "titre": "Chunther en rêve",
+    "description": ""
+  },
+  {
     "image": "images/img_montage/Chinf.png",
     "alt": "alt Finch - Xenoblade Chronicles 2",
     "class": "",
