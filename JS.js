@@ -32,6 +32,27 @@ const amiibo = document.getElementById("amiibo");
 /* Démarre le JSON pour l'application automatisé des images */
 const data = [
   {
+    "image": "images/img_fond/Churt.png",
+    "alt": "alt Burt - Astronaute en fusée à bouteille - Bug Hunter",
+    "class": "",
+    "titre": "Churt",
+    "description": "I am Churt, the urban bird"
+  },
+  {
+    "image": "images/img_montage/Ching.png",
+    "alt": "alt King - The Owl House",
+    "class": "",
+    "titre": "Ching",
+    "description": ""
+  },
+  {
+    "image": "images/img_montage/Chroussatif.png",
+    "alt": "alt Broussatif - Pokémon",
+    "class": "",
+    "titre": "Chroussatif",
+    "description": ""
+  },
+  {
     "image": "images/img_montage/Chunther.png",
     "alt": "alt Gunther - Adventure Time",
     "class": "",
@@ -148,7 +169,7 @@ const data = [
     "alt": "alt Niruhtra",
     "class": "",
     "titre": "Niruhtra",
-    "description": ""
+    "description": "Amen mother fucker !"
   },
   {
     "image": "images/img_fond/Kpop Demon Chunter.png",
@@ -211,7 +232,7 @@ const data = [
     "alt": "alt Ledrob",
     "class": "",
     "titre": "Ledrob",
-    "description": ""
+    "description": "Je l'aime beaucoup !"
   },
   {
     "image": "images/img_montage/Chanard scout.png",
@@ -225,7 +246,7 @@ const data = [
     "alt": "alt Arthurin",
     "class": "",
     "titre": "Arthurin",
-    "description": ""
+    "description": "Tu vois le kfc, ba c'est ça mais sauf que lui est encore vivant"
   },
   {
     "image": "images/dessin_base/Chabatteur.png",
@@ -239,14 +260,14 @@ const data = [
     "alt": "alt Dranach",
     "class": "",
     "titre": "Dranach",
-    "description": ""
+    "description": "ソーセージは健康にとても良い"
   },
   {
     "image": "images/dessin_base/Chanard et son fidèle Panneau.png",
     "alt": "alt Chanard et son fidèle Panneau",
     "class": "",
-    "titre": "Chanard et son fidèle Panneau",
-    "description": ""
+    "titre": "Panoda Fi Chage",
+    "description": "son fidèle Panneau"
   },
   {
     "image": "images/dessin_base/Protochanard.png",
@@ -1914,8 +1935,8 @@ data.forEach(item => {
 
 const thumbnails = document.querySelectorAll(".smallThumb");
 const favNone = document.querySelectorAll(".favNone");
-const description = document.querySelector(".description")
-const fond_noir_desc = document.querySelector(".fond_noir_desc")
+const description = document.querySelector(".description");
+const fond_noir_desc = document.querySelector(".fond_noir_desc");
 
 let favoris = JSON.parse(localStorage.getItem("favoris") || "[]");
 

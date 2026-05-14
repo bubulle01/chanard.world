@@ -491,7 +491,7 @@ hr::after {
     -ms-overflow-style: none;        /* Internet Explorer/Edge */
     white-space: pre-wrap;           /* pour garder les sauts de ligne si besoin */
     margin: clamp(0px, 0.5vw, 10px) clamp(0px, 0.5vw, 10px) clamp(0px, 2vw, 20px) clamp(0px, 0.5vw, 10px);
-    font-size: clamp(0.5rem, 4vw, 2rem);
+    font-size: clamp(0.5rem, 4vw, 3rem);
 }
 
 desc::-webkit-scrollbar {
